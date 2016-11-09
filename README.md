@@ -1,4 +1,4 @@
-## Quickstart to run Spring MVC application on Apache Tomcat 8 on OpenShift ##
+## Run Spring MVC application on Apache Tomcat 8 on OpenShift ##
 
 # Command to run app
 
