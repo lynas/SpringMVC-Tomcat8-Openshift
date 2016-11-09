@@ -1,4 +1,4 @@
-## Run Spring MVC application on Apache Tomcat 8 on OpenShift ##
+## Deploy Spring MVC application on OpenShift in Tomcat 8 server ##
 
 # Command to run app
 
