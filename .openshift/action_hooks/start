@@ -22,6 +22,8 @@ then
 	####################
 	# Start Tomcat 8  ##
 	####################
+    cd $OPENSHIFT_DATA_DIR/tomcat8/webapps
+    rm -rf ROOT
     cd $OPENSHIFT_DATA_DIR/tomcat8/bin
 	./shutdown.sh
 	./startup.sh
@@ -80,6 +82,8 @@ else
     cd $OPENSHIFT_REPO_DIR
     $M2/mvn --version
     $M2/mvn -s settings.xml clean package
+	cd $OPENSHIFT_DATA_DIR/tomcat8/webapps
+	rm -rf ROOT
 	cd $OPENSHIFT_DATA_DIR/tomcat8/bin
 	./startup.sh
 fi
